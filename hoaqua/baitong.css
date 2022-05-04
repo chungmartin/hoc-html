@@ -1,0 +1,489 @@
+body {
+    /*background-image: url("./images/bg.jpg");*/
+}
+
+#div_tong {
+    width: 1200px;
+    height: 1730px;
+    /*background-color: aqua;*/
+    margin: auto;
+    border: 1px #009F3C solid;
+}
+
+#top {
+    width: 100%;
+    height: 360px;
+}
+
+#top .banner {
+    width: 100%;
+    height: 85%;
+    /*background-color: rosybrown;*/
+}
+
+/*----------------het baner--------------*/
+#top .menu {
+    width: 100%;
+    height: 15%;
+    background-color: white;
+
+}
+
+.menu ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 1px;
+    padding-left: 1px;
+
+}
+
+.menu ul li {
+    width: 196px;
+    height: 100%;
+    display: inline-block;
+    background-color: #009F3C;
+    text-align: center;
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    line-height: 55px;
+    text-transform: uppercase;
+
+}
+
+.menu ul li a:hover {
+    color: #009F3C;
+}
+
+.menu ul li:hover {
+    color: #009F3C;
+    background-color: #FE8C00;
+}
+
+.menu ul li ul {
+    display: none;
+    margin-left: 0px;
+    position: absolute;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li ul li {
+    background-color: #009F3C;
+    width: 250px;
+    border-bottom: 1px white dotted;
+
+}
+
+.menu ul li ul li:hover {
+    background-color: #FE8C00;
+}
+
+.menu ul li ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.menu ul li ul li a:hover {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*------------------het menu top--------------*/
+#center {
+    width: 100%;
+    height: 1100px;
+    background-color: white;
+
+}
+
+#center .trai {
+    margin-top: 15px;
+    width: 25%;
+    height: 100%;
+    /*background-color: blue;*/
+    float: left;
+}
+
+#center .trai .dangnhap {
+    width: 95%;
+    height: 16%;
+    /*background-color: #765872;*/
+    border: #009F3C 1px solid;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#center .trai .dangnhap .dangnhap_td {
+    height: 30px;
+    width: 100%;
+    background-color: #009F3C;
+    border-radius: 5px;
+}
+
+#center .trai .dangnhap .dangnhap_td p {
+    margin-top: 0px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+form {
+    height: 90%;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.td {
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+}
+
+/*------------------------------het dang nhap----------------------------*/
+
+.trai_menu {
+    width: 95%;
+    height: 45%;
+    border: #009F3C 1px solid;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+
+}
+
+.trai_menu .trai_menu_td {
+    height: 30px;
+    width: 100%;
+    background-color: #009F3C;
+    border-radius: 5px;
+}
+
+.trai_menu .trai_menu_td p {
+    margin-top: 0px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.trai_menu_doc {
+    width: 95%;
+    height: 92%;
+    overflow: auto;
+}
+
+.trai_menu_doc ul {
+    list-style: none;
+    padding-left: 25px;
+    margin-top: 10px;
+    height: 100%;
+
+}
+
+.trai_menu_doc ul li {
+    border-bottom: 1px dotted #009F3C;
+    margin-top: 3px;
+    padding-bottom: 3px;
+}
+
+.trai_menu_doc ul li a {
+    text-decoration: none;
+    color: #009F3C;
+}
+
+.trai_menu_doc ul li a:hover {
+    color: #FE8C00;
+    font-weight: bold;
+}
+
+/*-----------------------HET TRAI MENU---------------------*/
+.sp_trai {
+    width: 95%;
+    height: 33%;
+    border: #009F3C 1px solid;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.sp_trai .sp_trai_bc {
+    height: 30px;
+    width: 100%;
+    background-color: #009F3C;
+    border-radius: 5px;
+}
+
+.sp_trai .sp_trai_bc P {
+    margin-top: 0px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.sp_trai .ten_sp_trai {
+    text-align: center;
+}
+
+.sp_trai .ten_sp_trai a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #009F3C;
+    font-weight: bold;
+}
+
+.sp_trai .ten_sp_trai a:hover {
+    text-decoration: none;
+    font-size: 22px;
+    color: #FE8C00;
+    font-weight: bold;
+}
+
+.sp_trai .hinhsp_trai img {
+    width: 95%;
+    height: 250px;
+    border: 1px dotted #009F3C;
+    padding: 2px;
+    margin: 5px 0px 0px 4px;
+}
+
+.gia_sp_trai {
+    color: #009F3C;
+    font-size: 18px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.gia_sp_trai .gia_1 {
+    font-weight: bold;
+}
+
+.gia_sp_trai .so_1 {
+    color: red;
+}
+
+/*--------------het trai----------------*/
+#center .phai {
+    width: 75%;
+    height: 100%;
+    /*background-color: palevioletred;*/
+    float: left;
+
+}
+
+.phai_sanpham {
+    height: 250px;
+    width: 100%;
+    margin-top: 15px;
+
+    display: flex;
+}
+
+.phai_sanpham .sp_1 {
+    float: left;
+    width: 205px;
+    margin: auto;
+    height: 250px;
+    background-repeat: no-repeat;
+    border: 1px #FE8C00 solid;
+    border-radius: 5px;
+}
+
+.phai_sanpham .sp_1 .ten_sp a {
+    width: 100%;
+    text-decoration: none;
+    margin-top: 5px;
+    float: left;
+    font-size: 18px;
+    color: #009F3C;
+    font-weight: bold;
+    padding: 2px 0 0 3px;
+}
+
+.phai_sanpham .sp_1 .ten_sp a:hover {
+    text-decoration: none;
+    margin-top: 5px;
+    float: left;
+    font-size: 18px;
+    color: #FE8C00;
+    font-weight: bold;
+    padding: 2px 0 0 3px;
+}
+
+.hinhsp img {
+    margin: 5px 0px 0px 4px;
+    width: 93%;
+    height: 160px;
+    border: 1px solid #009F3C;
+    padding: 2px;
+}
+
+.gia_sp {
+    color: #009F3C;
+    width: 50%;
+    font-size: 14px;
+    float: left;
+    font-style: italic;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.gia_sp .gia {
+    font-weight: bold;
+}
+
+.gia_sp .so {
+    color: red;
+}
+
+.chitiet {
+    width:47%;
+    float: left;
+
+}
+.chitiet a {
+    width: 40px;
+    padding: 3px 9px;
+    font-weight: bold;
+    background: #FF6A00;
+    border-radius: 5px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin: 10px 5px 0px 0px;
+}
+.chitiet a:hover {
+    width: 40px;
+    padding: 3px 9px;
+    font-weight: bold;
+    background: #009F3C;
+    border-radius: 5px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin: 10px 5px 0px 0px;
+}
+/*---------------------het center---------------------*/
+hr {
+    width: 80%;
+    border: #F60 1px solid;
+    margin: 0 auto;
+}
+
+#footer{
+    margin-top: 15px;
+    width: 100%;
+    height: 200px;
+    background-color:#058C52;
+    display: flex;
+    padding-top: 15px;
+}
+
+#footer .footer_left{
+    width: 40%;
+    padding-left: 20px;
+}
+#footer .footer_left .ft_left p{
+    width: 80%;
+    color: white;
+}
+
+.footer_left .phone a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_center{
+    width: 30%;
+}
+.footer_center .hot{
+    padding-top: 10px;
+}
+.footer_center a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.footer_center a:hover{
+    text-decoration: none;
+    color: #FE8C00;
+    font-weight: bold;
+}
+
+.footer_right{
+    width: 30%;
+}
+.tieude{
+    font-size: 22px;
+    font-weight: 600;
+    color: #FE8C00;
+    margin-bottom: 16px;
+}
+form{
+    width: 90%;
+    height: 90%;
+    margin-left: 0px;
+
+}
+input[type="uudai"] {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: black;
+    background-color: #FE8C00;
+    opacity: 70%;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #009F3C;
+}
+input[type="submit"]{
+    height: 42px;
+    width: 105%;
+    font-size: 18px;
+    color: #009F3C;
+    border-radius: 5px;
+    margin-top: 12px;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover{
+    background-color: #FE8C00;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.banquyen{
+    width: 100%;
+    text-align: right;
+    color:white;
+    background-color: #058C52;
+    height: 25px;
+}
+.banquyen p{
+    width: 98%;
+    margin:0px;
+
+}
+.banquyen a{
+    color: #FE8C00;
+    text-decoration: none;
+}
+
+

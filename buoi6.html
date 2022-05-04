@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -16,7 +17,7 @@
         #div_tong #trai {
             width: 20%;
             height: 100%;
-            background-color:black;
+            background-color: black;
             float: left;
             position: relative;
             padding-bottom: ;
@@ -57,98 +58,118 @@
             height: 100%;
             float: left;
             /*background-color: #765872;*/
-
         }
-
         .tieude {
             text-align: right;
             padding: 10px 30px 20px 10px;
         }
     </style>
 </head>
-<body>
-<div id="div_tong">
-    <div id="trai">
-        <img src=".\images\sanho.gif" alt="" style="position: absolute; z-index: 1;height: 100% ;width: 120%">
-    </div>
-    <div id="vien">
 
-    </div>
-    <div id="div_phai">
-        <div id="phai_1">
-            <div style="float: left">
-                <div class="clb">THAM GIA CLB</div>
-                <p style="margin-left: 20%"> Quý độc giả hãy điền đủ thông tin để tham gia phát triển Câu lạc bộ ngày
-                    càng vững mạnh hơn.</p>
+<body>
+    <div id="div_tong">
+        <div id="trai">
+            <img src=".\images\sanho.gif" alt="" style="position: absolute; z-index: 1;height: 100% ;width: 120%">
+        </div>
+        <div id="vien">
+
+        </div>
+        <div id="div_phai">
+            <div id="phai_1">
+                <div style="float: left">
+                    <div class="clb">THAM GIA CLB</div>
+                    <p style="margin-left: 20%"> Quý độc giả hãy điền đủ thông tin để tham gia phát triển Câu lạc bộ
+                        ngày
+                        càng vững mạnh hơn.</p>
+                </div>
+                <form style="margin-top: 30px; margin-left: 20% ">
+                    <div>
+                        <table style="background-color: #E79E5F; width: 80%;border-radius: 10px">
+                            <tr>
+                                <td class="tieude">
+                                    Họ và tên:
+                                </td>
+                                <td>
+                                    <input type="text" style="width: 200px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tieude">
+                                    Địa chỉ:
+                                </td>
+                                <td>
+                                    <input type="text" style="width: 220px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tieude">Email:</td>
+                                <td>
+                                    <input type="email" style="width: 200px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tieude">Điện thoại:</td>
+                                <td>
+                                    <input type="tel" name="" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tieude">Ngày sinh:</td>
+                                <td>
+
+                                    <input type="date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tieude">Đề tài:</td>
+                                <td>
+                                    <select>
+                                        <option>Tìm hiểu đề tài</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right;padding: 0px 30px 100px 0px">Nhóm:</td>
+                                <td>
+                                    <input type="radio" name="nhom"> Nghiên cứu<br>
+                                    <input type="radio" name="nhom"> Sinh vật<br>
+                                    <input type="radio" name="nhom"> Viễn dương<br>
+                                    <input type="radio" name="nhom"> CNTT<br>
+                                    <input type="radio" name="nhom"> Mỹ thuật<br>
+                                    <input type="radio" name="nhom"> Thực phẩm<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tieude">Gửi hình:</td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right;padding: 0px 30px 100px 0px">Tài liệu:</td>
+                                <td><input type="checkbox" name="nhom"> Nghiên cứu<br>
+                                    <input type="checkbox" name="nhom"> Sinh vật<br>
+                                    <input type="checkbox" name="nhom"> Viễn dương<br>
+                                    <input type="checkbox" name="nhom"> CNTT<br>
+                                    <input type="checkbox" name="nhom"> Mỹ thuật<br>
+                                    <input type="checkbox" name="nhom"> Thực phẩm<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td style="padding: 30px 0px 30px  0px">
+                                    <input type="submit" value="Tham gia" style="width: 100px; border-radius: 5px">
+                                    <input type="reset" value="Nhập Lại" style="width: 100px; border-radius: 5px">
+                                </td>
+                            </tr>
+                        </table>
+                </form>
             </div>
-            <form style="margin-top: 30px; margin-left: 20% ">
-                <div>
-                    <table style="background-color: #E79E5F; width: 80%;border-radius: 10px">
-                        <tr>
-                            <td class="tieude">
-                                Họ và tên:
-                            </td>
-                            <td><input type="text" style="width: 200px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tieude">
-                                Địa chỉ:
-                            </td>
-                            <td><input type="text" style="width: 220px"></td>
-                        </tr>
-                        <tr>
-                            <td class="tieude">Email:</td>
-                            <td><input type="email" style="width: 200px"></td>
-                        </tr>
-                        <tr>
-                            <td class="tieude">Điện thoại:</td>
-                            <td><input type="tel" name="" id=""></td>
-                        </tr>
-                        <tr>
-                            <td class="tieude">Ngày sinh:</td>
-                            <td><input type="date"></td>
-                        </tr>
-                        <tr>
-                            <td class="tieude">Đề tài:</td>
-                            <td><select>
-                                <option>Tìm hiểu đề tài</option>
-                            </select></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right;padding: 0px 30px 100px 0px">Nhóm:</td>
-                            <td><input type="radio" name="nhom"> Nghiên cứu<br><input type="radio" name="nhom"> Sinh vật<br><input
-                                    type="radio" name="nhom"> Viễn dương<br><input type="radio" name="nhom">
-                                CNTT<br><input type="radio" name="nhom"> Mỹ thuật<br><input type="radio" name="nhom">
-                                Thực phẩm<br></td>
-                        </tr>
-                        <tr>
-                            <td class="tieude">Gửi hình:</td>
-                            <td><input type="file"></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right;padding: 0px 30px 100px 0px">Tài liệu:</td>
-                            <td><input type="checkbox" name="nhom"> Nghiên cứu<br><input type="checkbox" name="nhom">
-                                Sinh vật<br><input type="checkbox" name="nhom"> Viễn dương<br><input type="checkbox"
-                                                                                                     name="nhom">
-                                CNTT<br><input type="checkbox" name="nhom"> Mỹ thuật<br><input type="checkbox"
-                                                                                               name="nhom"> Thực
-                                phẩm<br></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td style="padding: 30px 0px 30px  0px"><input type="submit" value="Tham gia"
-                                                                           style="width: 100px; border-radius: 5px"><input
-                                    type="reset" value="Nhập Lại" style="width: 100px; border-radius: 5px"></td>
-                        </tr>
-                    </table>
-            </form>
+        </div>
+        <div id="phai_2"><img src=".\images\nhom1a.jpg" alt="" width="100%" style="padding: 20px 0px 20px 0px">
+            <img src=".\images\nhom1b.jpg" alt="" width="100%" style="padding: 20px 0px 20px 0px">
+            <img src=".\images\nhom1c.jpg" alt="" width="100%" style="padding: 20px 0px 20px 0px">
+            <img src=".\images\nhom1d.jpg" alt="" width="100%" style="padding: 20px 0px 20px 0px">
         </div>
     </div>
-    <div id="phai_2"><img src=".\images\nhom1a.jpg" alt="" width="100%" style="padding: 20px 0px 20px 0px"><img
-            src=".\images\nhom1b.jpg" alt="" width="100%" style="padding: 20px 0px 20px 0px"><img
-            src=".\images\nhom1c.jpg" alt="" width="100%" style="padding: 20px 0px 20px 0px"><img
-            src=".\images\nhom1d.jpg" alt="" width="100%" style="padding: 20px 0px 20px 0px"></div>
-</div>
 </body>
+
 </html>
