@@ -72,6 +72,7 @@ body {
     display: none;
     margin-left: 0px;
     position: absolute;
+    margin-top: -1px;
 }
 
 .menu ul li:hover ul {
@@ -140,15 +141,19 @@ body {
     font-weight: bold;
     color: white;
 }
-
+.dn{
+    display: flex;
+}
 form {
     height: 90%;
-    width: 90%;
-    margin-left: 10px;
-}
-
-.td {
     width: 100%;
+    margin: auto;
+    text-align: center;
+}
+table{
+    width: 110%;
+}
+.td {
     padding: 8px 0px 8px 0px;
 }
 
