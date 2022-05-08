@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/3189407.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            height: 500px;
+            justify-content: center
+        }
+
+        #div_tong {
+            width: 500px;
+            border-radius: 5px;
+            margin: auto;
+            background-color: #DCCDCA;
+            border: 1px dotted #147DBF;
+        }
+
+        #div_tong .titel {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px 5px 0px 0px;
+
+        }
+
+        #div_tong .titel p {
+            margin: 0px;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FF4B3A;
+
+        }
+
+        #bocuc {
+            display: flex;
+        }
+
+        .nhap {
+            width: 250px;
+            margin: 10px;
+            border-radius: 0px 0px 5px 5px;
+            float: left;
+        }
+
+        input[type="text"] {
+            border-radius: 4px;
+            background-color: white;
+            border: 1px solid #DCCDCA;
+            padding: 5px;
+            width: 100px;
+        }
+
+        .tinh {
+            width: 230px;
+            margin: 10px;
+            border-radius: 0px 0px 5px 5px;
+            float: left;
+        }
+
+        input[type="button"] {
+            border-radius: 4px;
+            background-color: #147DBF;
+            border: 1px solid #DCCDCA;
+            padding: 5px;
+            width: 70px;
+            float: right;
+            color: #D5EAFB;
+        }
+        input[type="button"]:hover {
+            border-radius: 4px;
+            background-color: #FEA614;
+            border: 1px solid #DCCDCA;
+            padding: 5px;
+            width: 70px;
+            float: right;
+            color: #FF4B3A;
+        }
+
+        #ket_qua {
+            width: 480px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        #ket_qua p {
+            width: 100%;
+            margin-left: 5px;
+            padding: 5px;
+            color: #1289CC;
+            margin: 0px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="div_tong">
+    <div class="titel">
+        <p class="title">Tính ngày trong tháng</p>
+    </div>
+    <div id="bocuc">
+        <div class="nhap">
+            <input type="text" id="thang" placeholder="Tháng">
+            /
+            <input type="text" id="nam" placeholder="Năm">
+        </div>
+        <div class="tinh">
+            <input type="button" value="Tính ngày" onclick="tinh_ngay()">
+        </div>
+    </div>
+    <div id="ket_qua">
+        <p id="ketqua"> Kết quả tính ngày</p>
+    </div>
+
+</div>
+<script>
+    function tinh_ngay(){
+        let thang = parseInt(document.getElementById('thang').value);
+        let nam = parseInt(document.getElementById('nam').value);
+        let ngay;
+        switch(thang){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                ngay = 31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                ngay = 30;
+                break;
+            case 2:
+                if(nam % 400 == 0 || (nam % 4 == 0 && nam % 100 != 0)){
+                    ngay = 29;
+                } else {
+                    ngay = 28;
+                }
+                break;
+        }
+        document.getElementById('ketqua').innerHTML = `Tháng ${thang} | Năm ${nam} có ${ngay} ngày`;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/3189407.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            height: 400px;
+            justify-content: center
+        }
+
+        #div_tong {
+            width: 400px;
+            border-radius: 5px;
+            margin: auto;
+            background-color: #DCCDCA ;
+            border: 1px dotted #147DBF;
+        }
+
+        #div_tong .titel {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px 5px 0px 0px;
+
+        }
+
+        #div_tong .titel p {
+            margin: 0px;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FF4B3A;
+
+        }
+
+        #bocuc {
+            display: flex;
+        }
+
+        .nhap {
+            width: 50%;
+            margin: 10px;
+            border-radius: 0px 0px 5px 5px;
+            text-align: right;
+
+        }
+        .nhap p{
+            margin: auto;
+            color:  #147DBF;
+            height: 25px;
+        }
+
+        input[type="number"] {
+            border-radius: 4px;
+            background-color: white;
+            border: 1px solid #DCCDCA;
+            padding: 5px;
+            width: 100px;
+        }
+
+        .tinh {
+            width: 50%;
+            /*margin: 10px;*/
+            margin-top: 34px;
+            border-radius: 0px 0px 5px 5px;
+            float: left;
+
+        }
+        .tinh p{
+            margin: auto;
+            color:  #147DBF;
+            height: 25px;
+        }
+
+        input[type="button"] {
+            border-radius: 4px;
+            background-color: #147DBF;
+            border: 1px solid #DCCDCA;
+            padding: 5px;
+            float: left;
+            color: #D5EAFB;
+        }
+        input[type="button"]:hover {
+            border-radius: 4px;
+            background-color: #FEA614;
+            border: 1px solid #DCCDCA;
+            padding: 5px;
+            float: left;
+            color: #FF4B3A;
+            font-weight: bold;
+        }
+
+        #ketqua {
+            width: 380px;
+            margin: 0px 10px 10px 10px;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        #ketqua p {
+            width: 370px;
+            margin-left: 5px;
+            padding: 5px;
+            color: #1289CC;
+            margin: 0px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+<div id="div_tong">
+    <div class="titel">
+        <p class="title">Tính thuế lương</p>
+    </div>
+    <div id="bocuc">
+        <div class="nhap">
+            <p> Nhập lương tháng</p>
+            <input type="number" id="luong_vao" placeholder="Triệu">
+        </div>
+        <div class="tinh">
+<!--            <p> -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</p>-->
+            <input type="button" value="Tính thuế thu nhập" onclick="tinh_thue()">
+        </div>
+    </div>
+    <div id="ketqua">
+        <p id="ket_qua"> Kết quả tính thuế lương</p>
+    </div>
+
+</div>
+<script>
+    function tinh_thue(){
+        let luong_vao = parseInt(document.getElementById('luong_vao').value);
+        let thue = 0;
+        let luong_rong = 0;
+        if(luong_vao < 7){
+            thue = luong_vao * 0.1;
+            luong_rong = luong_vao - thue;
+        }
+        if(luong_vao >= 7 && luong_vao < 15){
+            thue = luong_vao * 0.2;
+            luong_rong = luong_vao - thue;
+        }
+        if(luong_vao >= 15){
+            thue = luong_vao * 0.3;
+            luong_rong = luong_vao - thue;
+        }
+        thue = thue.toFixed(2);
+        luong_rong = luong_rong.toFixed(2);
+        document.getElementById('ket_qua').innerHTML= `Lương ban đầu ${luong_vao} | Thuế ${thue} | Lương trừ thuế ${luong_rong}`;
+    }
+</script>
+</body>
+</html>

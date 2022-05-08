@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/3189407.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            height: 500px;
+            justify-content: center
+        }
+
+        #div_tong {
+            width: 500px;
+            border-radius: 5px;
+            margin: auto;
+            background-color: #DCCDCA;
+            border: 1px dashed #147DBF;
+        }
+
+        #div_tong .titel {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px 5px 0px 0px;
+
+        }
+
+        #div_tong .titel p {
+            margin: 0px;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FF4B3A;
+
+        }
+
+        #bocuc {
+            display: flex;
+            margin: 10px;
+        }
+
+        .nhap_duong {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            border-radius: 0px 0px 5px 5px;
+        }
+        .nhap_duong p{
+            margin: 5px;
+            color:  #147DBF;
+        }
+
+        input[type="number"] {
+            border-radius: 4px;
+            background-color: white;
+            border: 1px solid #DCCDCA;
+            padding: 5px;
+            width: 100px;
+        }
+        input[type="text"] {
+            border-radius: 4px;
+            background-color: white;
+            border: 1px solid #DCCDCA;
+            padding: 5px;
+            width: 100px;
+        }
+        #bottum{
+            margin: auto;
+        }
+        input[type="button"]{
+            padding: 5px;
+            font-weight: bold;
+            background-color: #0D74BA;
+            color: white;
+            border: 1px solid #DCCDCA;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div id="div_tong">
+    <div class="titel">
+        <p class="title">Tính năm âm lịch</p>
+    </div>
+    <div id="bocuc">
+        <div class="nhap_duong">
+            <p> Năm dương lịch</p>
+            <input type="number" id="nam" placeholder="Nhập năm">
+        </div>
+        <div id="bottum">
+            <input type="button" value=">>" onclick="tinh_nam_am()">
+        </div>
+        <div class="nhap_duong">
+            <p> Năm âm lịch</p>
+            <input type="text" id="ket_qua" placeholder="Kết quả">
+        </div>
+    </div>
+</div>
+<script>
+    function tinh_nam_am(){
+        let nam = parseInt(document.getElementById('nam').value);
+        let nam_can = '';
+        let nam_chi = '';
+
+        switch((nam-3)%10){
+            case 0: nam_can = "Quý";
+                break;
+            case 1: nam_can = "Giáp";
+                break;
+            case 2: nam_can = "Ất";
+                break;
+            case 3: nam_can = "Bính";
+                break;
+            case 4: nam_can = "Đinh";
+                break;
+            case 5: nam_can = "Mậu";
+                break;
+            case 6: nam_can = "Kỷ";
+                break;
+            case 7: nam_can = "Canh";
+                break;
+            case 8: nam_can = "Tân";
+                break;
+            case 9: nam_can = "Nhâm";
+                break;
+        };
+        switch ((nam-3)%12){
+            case 0: nam_chi = "Hợi";
+                break;
+            case 1: nam_chi = "Tý";
+                break;
+            case 2: nam_chi = "Sửu";
+                break;
+            case 3: nam_chi = "Dần";
+                break;
+            case 4: nam_chi = "Mão";
+                break;
+            case 5: nam_chi = "Thìn";
+                break;
+            case 6: nam_chi = "Tỵ";
+                break;
+            case 7: nam_chi = "Ngọ";
+                break;
+            case 8: nam_chi = "Mùi";
+                break;
+            case 9: nam_chi = "Thân";
+                break;
+            case 10: nam_chi = "Dậu";
+                break;
+            case 11: nam_chi = "Tuất";
+                break;
+        };
+
+        let ket_qua = (`${nam_can} ${nam_chi}`);
+        document.getElementById('ket_qua').value=ket_qua;
+    }
+</script>
+</body>
+</html>
